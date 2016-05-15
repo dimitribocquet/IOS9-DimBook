@@ -20,9 +20,14 @@
 		4D78D2941CE8832000A857B6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78D2931CE8832000A857B6 /* Constants.swift */; };
 		4D78D2961CE886B300A857B6 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78D2951CE886B300A857B6 /* MaterialButton.swift */; };
 		4D78D2981CE889BC00A857B6 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78D2971CE889BC00A857B6 /* MaterialTextField.swift */; };
+		4D78D29D1CE891B600A857B6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D78D29A1CE891B600A857B6 /* Bolts.framework */; };
+		4D78D29E1CE891B600A857B6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D78D29B1CE891B600A857B6 /* FBSDKCoreKit.framework */; };
+		4D78D29F1CE891B600A857B6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D78D29C1CE891B600A857B6 /* FBSDKLoginKit.framework */; };
+		D461BEF59DA1E182C392F591 /* Pods_dimbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF884D93D7D7C8BCCFBC56F /* Pods_dimbook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20CE83ABF3469D7729ECDA1C /* Pods-dimbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dimbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-dimbook/Pods-dimbook.release.xcconfig"; sourceTree = "<group>"; };
 		4D78D26F1CE87EDC00A857B6 /* dimbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dimbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D78D2721CE87EDC00A857B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D78D2741CE87EDC00A857B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +43,11 @@
 		4D78D2931CE8832000A857B6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4D78D2951CE886B300A857B6 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		4D78D2971CE889BC00A857B6 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		4D78D29A1CE891B600A857B6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		4D78D29B1CE891B600A857B6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		4D78D29C1CE891B600A857B6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		5CF884D93D7D7C8BCCFBC56F /* Pods_dimbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dimbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F2FF8DD30156B4E448A4E7 /* Pods-dimbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dimbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dimbook/Pods-dimbook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D78D29D1CE891B600A857B6 /* Bolts.framework in Frameworks */,
+				4D78D29E1CE891B600A857B6 /* FBSDKCoreKit.framework in Frameworks */,
+				4D78D29F1CE891B600A857B6 /* FBSDKLoginKit.framework in Frameworks */,
+				D461BEF59DA1E182C392F591 /* Pods_dimbook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,8 @@
 			children = (
 				4D78D2711CE87EDC00A857B6 /* dimbook */,
 				4D78D2701CE87EDC00A857B6 /* Products */,
+				52E92AF2D56037C83990DD49 /* Pods */,
+				57AB5812F4730593AF2E5D3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +86,7 @@
 		4D78D2711CE87EDC00A857B6 /* dimbook */ = {
 			isa = PBXGroup;
 			children = (
+				4D78D2991CE891A500A857B6 /* Frameworks */,
 				4D78D2921CE882F700A857B6 /* Utils */,
 				4D78D2871CE87EFD00A857B6 /* Controllers */,
 				4D78D2861CE87EF900A857B6 /* Views */,
@@ -128,6 +145,33 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		4D78D2991CE891A500A857B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D78D29A1CE891B600A857B6 /* Bolts.framework */,
+				4D78D29B1CE891B600A857B6 /* FBSDKCoreKit.framework */,
+				4D78D29C1CE891B600A857B6 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52E92AF2D56037C83990DD49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61F2FF8DD30156B4E448A4E7 /* Pods-dimbook.debug.xcconfig */,
+				20CE83ABF3469D7729ECDA1C /* Pods-dimbook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		57AB5812F4730593AF2E5D3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CF884D93D7D7C8BCCFBC56F /* Pods_dimbook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D78D2811CE87EDD00A857B6 /* Build configuration list for PBXNativeTarget "dimbook" */;
 			buildPhases = (
+				2BB90368E1ED5738CD8AC712 /* 📦 Check Pods Manifest.lock */,
 				4D78D26B1CE87EDC00A857B6 /* Sources */,
 				4D78D26C1CE87EDC00A857B6 /* Frameworks */,
 				4D78D26D1CE87EDC00A857B6 /* Resources */,
+				BB3CB468B3684B256912FB22 /* 📦 Embed Pods Frameworks */,
+				4AAB2163D8647202DFD5E89E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +244,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BB90368E1ED5738CD8AC712 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4AAB2163D8647202DFD5E89E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dimbook/Pods-dimbook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3CB468B3684B256912FB22 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dimbook/Pods-dimbook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D78D26B1CE87EDC00A857B6 /* Sources */ = {
@@ -321,8 +416,14 @@
 		};
 		4D78D2821CE87EDD00A857B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F2FF8DD30156B4E448A4E7 /* Pods-dimbook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dimbook",
+				);
 				INFOPLIST_FILE = dimbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dimitribocquet.dimbook;
@@ -332,8 +433,14 @@
 		};
 		4D78D2831CE87EDD00A857B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CE83ABF3469D7729ECDA1C /* Pods-dimbook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dimbook",
+				);
 				INFOPLIST_FILE = dimbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dimitribocquet.dimbook;
@@ -360,6 +467,7 @@
 				4D78D2831CE87EDD00A857B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
