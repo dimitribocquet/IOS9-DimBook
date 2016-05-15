@@ -105,16 +105,6 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OhY-4u-FW0" customClass="MaterialTextField" customModule="dimbook" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="72" width="520" height="35"/>
-                                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="7ma-iX-Sq0"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ux4-UT-UOV" customClass="MaterialTextField" customModule="dimbook" customModuleProvider="target">
                                         <rect key="frame" x="20" y="127" width="520" height="35"/>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -123,7 +113,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTp-BZ-uLD" customClass="MaterialButton" customModule="dimbook" customModuleProvider="target">
                                         <rect key="frame" x="173" y="212" width="215" height="33"/>
@@ -136,7 +126,20 @@
                                         <state key="normal" title="Login / Signup">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="attemptLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QMd-79-pGw"/>
+                                        </connections>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OhY-4u-FW0" customClass="MaterialTextField" customModule="dimbook" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="72" width="520" height="35"/>
+                                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="7ma-iX-Sq0"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -175,10 +178,33 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YEZ-ch-OkW" secondAttribute="bottom" constant="20" id="m6D-57-njd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="OhY-4u-FW0" id="5nN-1T-GkV"/>
+                        <outlet property="passwordField" destination="ux4-UT-UOV" id="e3I-ki-LO6"/>
+                        <segue destination="Qbw-Iz-wh9" kind="show" identifier="loggedIn" id="dpe-DV-T1g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893" y="450"/>
+            <point key="canvasLocation" x="874" y="445"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CU6-LS-AqC">
+            <objects>
+                <viewController id="Qbw-Iz-wh9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d2z-U2-kdR"/>
+                        <viewControllerLayoutGuide type="bottom" id="XzR-d2-na7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tti-va-UJM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiO-Ze-Gby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1598" y="445"/>
         </scene>
     </scenes>
     <resources>
