@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+// API Firebase
+let FIREBASE_URL = "https://ios-facebook-app.firebaseio.com"
+
 let SHADOW_COLOR: CGFloat = 157.0 / 255.0
 let KEY_UID = "uid"
 
