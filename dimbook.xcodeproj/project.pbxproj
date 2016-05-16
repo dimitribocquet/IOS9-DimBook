@@ -24,6 +24,8 @@
 		4D78D29E1CE891B600A857B6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D78D29B1CE891B600A857B6 /* FBSDKCoreKit.framework */; };
 		4D78D29F1CE891B600A857B6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D78D29C1CE891B600A857B6 /* FBSDKLoginKit.framework */; };
 		4D7F866B1CE8C9430091D500 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7F866A1CE8C9430091D500 /* DataService.swift */; };
+		4D7F866D1CEA472D0091D500 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7F866C1CEA472D0091D500 /* FeedVC.swift */; };
+		4D7F866F1CEA48790091D500 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7F866E1CEA48790091D500 /* PostCell.swift */; };
 		D461BEF59DA1E182C392F591 /* Pods_dimbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF884D93D7D7C8BCCFBC56F /* Pods_dimbook.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		4D78D29B1CE891B600A857B6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		4D78D29C1CE891B600A857B6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		4D7F866A1CE8C9430091D500 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4D7F866C1CEA472D0091D500 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		4D7F866E1CEA48790091D500 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		5CF884D93D7D7C8BCCFBC56F /* Pods_dimbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dimbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F2FF8DD30156B4E448A4E7 /* Pods-dimbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dimbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dimbook/Pods-dimbook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,7 +100,6 @@
 				4D78D2851CE87EF400A857B6 /* Models */,
 				4D78D2841CE87EED00A857B6 /* Resources */,
 				4D78D2721CE87EDC00A857B6 /* AppDelegate.swift */,
-				4D78D2741CE87EDC00A857B6 /* ViewController.swift */,
 				4D78D2761CE87EDD00A857B6 /* Main.storyboard */,
 				4D78D2791CE87EDD00A857B6 /* Assets.xcassets */,
 				4D78D27B1CE87EDD00A857B6 /* LaunchScreen.storyboard */,
@@ -129,6 +132,7 @@
 				4D78D2901CE882BC00A857B6 /* MaterialView.swift */,
 				4D78D2951CE886B300A857B6 /* MaterialButton.swift */,
 				4D78D2971CE889BC00A857B6 /* MaterialTextField.swift */,
+				4D7F866E1CEA48790091D500 /* PostCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -136,6 +140,8 @@
 		4D78D2871CE87EFD00A857B6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4D78D2741CE87EDC00A857B6 /* ViewController.swift */,
+				4D7F866C1CEA472D0091D500 /* FeedVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -313,6 +319,8 @@
 				4D7F866B1CE8C9430091D500 /* DataService.swift in Sources */,
 				4D78D2911CE882BC00A857B6 /* MaterialView.swift in Sources */,
 				4D78D2751CE87EDC00A857B6 /* ViewController.swift in Sources */,
+				4D7F866D1CEA472D0091D500 /* FeedVC.swift in Sources */,
+				4D7F866F1CEA48790091D500 /* PostCell.swift in Sources */,
 				4D78D2731CE87EDC00A857B6 /* AppDelegate.swift in Sources */,
 				4D78D2941CE8832000A857B6 /* Constants.swift in Sources */,
 				4D78D2961CE886B300A857B6 /* MaterialButton.swift in Sources */,
