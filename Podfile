@@ -7,4 +7,5 @@ target 'dimbook' do
 
   # Pods for dimbook
   pod 'Firebase', '>= 2.5.1'
+  pod 'Alamofire', '~> 3.4'
 end
